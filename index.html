@@ -1,46 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>FantaMC - Servidor Oficial</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FantaMC</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, orange, red);
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.server-img {
+    width: 300px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.staff-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.staff-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+    background: #2c2c2c;
+}
+
+.staff-card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 3px solid orange;
+}
+
+.staff-card h4 {
+    margin: 5px 0;
+    color: orange;
+}
+
+.modalidad {
+    font-size: 22px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+</style>
+
 </head>
 <body>
 
-<header>🍊 FantaMC</header>
+<header>
+    <h1>🍊 FantaMC</h1>
+    <p><strong>IP:</strong> play.fantamc.com</p>
+</header>
 
-<div class="foro">
+<section>
+    <h2>📖 Historia del Servidor</h2>
+    <p>FantaMC es un servidor PvP competitivo donde los jugadores demuestran su habilidad en combate.</p>
+    <img src="https://via.placeholder.com/300x200.png?text=FantaMC+Server" class="server-img">
+</section>
 
-  <div class="categoria">
-    <h2>🔥 Servidor Oficial FantaMC</h2>
-    <p><strong>IP:</strong> play.fantamc.net</p>
-    <p>Modalidad activa: ⚔ PvP Competitivo</p>
-  </div>
+<section>
+    <h2>⚔ Modalidad Activa</h2>
+    <div class="modalidad">
+        PvP Competitivo
+    </div>
+</section>
 
-  <div class="categoria">
-    <h2>📖 Nuestra Historia</h2>
-    <p>
-      FantaMC nació con el objetivo de crear una comunidad PvP competitiva,
-      equilibrada y justa para todos los jugadores. Nuestro enfoque es
-      ofrecer combates intensos, eventos y un staff activo.
-    </p>
-  </div>
-
-  <div class="categoria">
-    <h2>🖼 Imagen del Servidor</h2>
-    <p>Aquí puedes agregar una imagen del spawn o logo.</p>
-  </div>
-
-  <div class="categoria">
+<section>
     <h2>👑 Equipo Administrativo</h2>
 
-    <p><strong>Owner:</strong> NombreOwner</p>
-    <p><strong>Administración:</strong> NombreAdmin</p>
-    <p><strong>Gestión:</strong> TuNombre 😎</p>
-    <p><strong>Soportes:</strong> NombreSupport1, NombreSupport2</p>
+    <div class="staff-container">
 
-  </div>
+        <!-- OWNER -->
+        <div class="staff-card">
+            <img src="https://minotar.net/avatar/triqqew/100">
+            <h4>Owner</h4>
+            <p>triqqew</p>
+        </div>
 
-</div>
+        <!-- ADMIN -->
+        <div class="staff-card">
+            <img src="https://minotar.net/avatar/dunv/100">
+            <h4>Admin</h4>
+            <p>dunv</p>
+        </div>
+
+        <!-- GESTION -->
+        <div class="staff-card">
+            <img src="https://minotar.net/avatar/Scartleth/100">
+            <h4>Gestión</h4>
+            <p>Scartleth</p>
+        </div>
+
+        <!-- MOD -->
+        <div class="staff-card">
+            <img src="https://minotar.net/avatar/vDamage/100">
+            <h4>Moderador</h4>
+            <p>vDamage</p>
+        </div>
+
+        <!-- SUPPORT 1 -->
+        <div class="staff-card">
+            <img src="https://minotar.net/avatar/Jhoaraly/100">
+            <h4>Support</h4>
+            <p>Jhoaraly</p>
+        </div>
+
+        <!-- SUPPORT 2 -->
+        <div class="staff-card">
+            <img src="https://minotar.net/avatar/AscanIsBack/100">
+            <h4>Support</h4>
+            <p>AscanIsBack</p>
+        </div>
+
+        <!-- SUPPORT 3 -->
+        <div class="staff-card">
+            <img src="https://minotar.net/avatar/x4sp_/100">
+            <h4>Support</h4>
+            <p>x4sp_</p>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
