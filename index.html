@@ -2,214 +2,133 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Survival Grands</title>
-
-<style>
-
-body{
-background:#0b0b0b;
-font-family:Arial;
-color:white;
-margin:0;
-text-align:center;
-}
-
-header{
-padding:40px;
-font-size:35px;
-color:#ffa500;
-font-weight:bold;
-}
-
-.spawn{
-width:80%;
-max-width:900px;
-border-radius:15px;
-box-shadow:0 0 20px orange;
-margin-top:20px;
-}
-
-.section{
-max-width:1200px;
-margin:auto;
-padding:30px;
-}
-
-.staff-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
-.staff-card{
-background:#1a1a1a;
-padding:25px;
-border-radius:15px;
-transition:0.3s;
-box-shadow:0 0 10px black;
-}
-
-.staff-card:hover{
-transform:scale(1.07);
-box-shadow:0 0 25px #00ff9d;
-}
-
-.staff-card img{
-width:120px;
-image-rendering:pixelated;
-margin-bottom:10px;
-}
-
-.owner{border:2px solid gold;}
-.admin{border:2px solid orange;}
-.gestion{border:2px solid #00bfff;}
-.mod{border:2px solid #ffaa00;}
-.support{border:2px solid #00ff55;}
-
-.discord-btn{
-display:inline-block;
-margin-top:40px;
-padding:15px 25px;
-background:#5865F2;
-border-radius:10px;
-color:white;
-font-weight:bold;
-text-decoration:none;
-font-size:18px;
-}
-
-.discord-btn:hover{
-background:#4752c4;
-}
-
-.notice{
-margin-top:40px;
-background:#222;
-padding:15px;
-border-left:5px solid red;
-border-radius:8px;
-}
-
-.server-status{
-margin-top:20px;
-font-size:20px;
-color:#00ff9d;
-}
-
-</style>
-
+<title>FantaMC - Survival Grands</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-⚔️ BIENVENIDOS A SURVIVAL GRANDS ⚔️
+<header class="hero">
+
+<img src="fantamcspawn.png" class="banner">
+
+<h1>⚔️ SURVIVAL GRANDS ⚔️</h1>
+
+<p>Donde la estrategia y la fuerza definen tu legado.</p>
+
+<div class="buttons">
+
+<a href="https://discord.gg/G7j5jhPv" target="_blank" class="discord">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+Discord
+</a>
+
+</div>
+
+<div class="server-ip">
+IP: <b>play.fantamc.net</b>
+</div>
+
+<div id="players" class="players">
+Jugadores Online: Cargando...
+</div>
+
 </header>
 
-<img src="fantamcspawn.png" class="spawn">
 
-<div class="section">
-
-<p>
-Donde la estrategia y la fuerza definen tu legado.<br><br>
-
-¡Prepárate para la experiencia definitiva de Survival competitivo!  
-Survival Grands no es solo un servidor; es un campo de batalla donde los clanes más poderosos luchan por la gloria.
-</p>
+<section class="info">
 
 <h2>🌟 ¿QUÉ TE ESPERA?</h2>
 
-<p>
-🛡️ Guerra de Clanes Extrema<br>
-🚩 KOTHs Desafiantes<br>
-⚖️ Transparencia y Justicia<br>
-💰 Economía Equilibrada
-</p>
+<ul>
+<li>🛡️ Guerra de Clanes Extrema</li>
+<li>🚩 KOTHs Desafiantes</li>
+<li>⚖️ Transparencia y Justicia</li>
+<li>💰 Economía Equilibrada</li>
+</ul>
 
-<div class="server-status">
-👥 Jugadores Online: <span id="players">Cargando...</span>
-</div>
+</section>
 
-</div>
 
-<div class="section">
+<section class="staff">
 
-<h2>🛡️ EQUIPO SURVIVAL GRANDS 🛡️</h2>
+<h2>🛡️ EQUIPO SURVIVAL GRANDS</h2>
 
 <div class="staff-grid">
 
-<div class="staff-card owner">
-<img src="https://mc-heads.net/body/a829cc48139d419aaf82d62482c9b55b/150">
-<h3>👑 triqqew</h3>
+<div class="card owner">
+<img src="https://mc-heads.net/body/a829cc48139d419aaf82d62482c9b55b">
+<h3>triqqew</h3>
 <p>OWNER</p>
 </div>
 
-<div class="staff-card admin">
-<img src="https://mc-heads.net/body/a44da48ed12a43be811414e8642b27d0/150">
+<div class="card admin">
+<img src="https://mc-heads.net/body/a44da48ed12a43be811414e8642b27d0">
 <h3>dunv</h3>
 <p>ADMIN</p>
 </div>
 
-<div class="staff-card gestion">
-<img src="https://mc-heads.net/body/f414bf4865ad4b4eb25b5eb44b31cea4/150">
+<div class="card gestion">
+<img src="https://mc-heads.net/body/f414bf4865ad4b4eb25b5eb44b31cea4">
 <h3>Scartleth</h3>
 <p>GESTIÓN</p>
 </div>
 
-<div class="staff-card mod">
-<img src="https://mc-heads.net/body/vDamage/150">
+<div class="card mod">
+<img src="https://mc-heads.net/body/vDamage">
 <h3>vDamage</h3>
 <p>MOD</p>
 </div>
 
-<div class="staff-card support">
-<img src="https://mc-heads.net/body/Jhoaraly/150">
+<div class="card support">
+<img src="https://mc-heads.net/body/Jhoaraly">
 <h3>Jhoaraly</h3>
 <p>SUPPORT</p>
 </div>
 
-<div class="staff-card support">
-<img src="https://mc-heads.net/body/AscanIsBack/150">
+<div class="card support">
+<img src="https://mc-heads.net/body/AscanIsBack">
 <h3>AscanIsBack</h3>
 <p>SUPPORT</p>
 </div>
 
-<div class="staff-card support">
-<img src="https://mc-heads.net/body/x4sp_/150">
+<div class="card support">
+<img src="https://mc-heads.net/body/x4sp_">
 <h3>x4sp_</h3>
 <p>SUPPORT</p>
 </div>
 
 </div>
 
-<a class="discord-btn" href="https://discord.gg/G7j5jhPv">
-💬 Unirse al Discord
-</a>
+</section>
 
-<div class="notice">
-⚠️ RECUERDA: Reportes y apelaciones únicamente vía Ticket.  
-El Staff nunca pedirá tus datos personales.
-</div>
 
-</div>
+<section class="rules">
+
+<h2>📜 REGLAMENTO</h2>
+
+<p>Consulta todas las reglas del servidor en el apartado de reglamento.</p>
+
+<a href="reglas.html" class="rules-btn">Ver Reglas</a>
+
+</section>
+
 
 <script>
 
-fetch https://api.mcsrvstat.us/2/play.survivalgrands.net
+fetch("https://api.mcsrvstat.us/2/play.fantamc.net")
 .then(res => res.json())
 .then(data => {
 
-if(data.online){
-document.getElementById("players").innerText =
-data.players.online + " / " + data.players.max;
-}else{
-document.getElementById("players").innerText = "Servidor Offline";
+if(data.players){
+document.getElementById("players").innerHTML =
+"👥 Jugadores Online: " + data.players.online + "/" + data.players.max;
 }
 
-})
+});
 
 </script>
+
 
 </body>
 </html>
