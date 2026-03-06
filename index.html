@@ -8,108 +8,87 @@
 
 <body>
 
-<header class="hero">
+<header class="topbar">
+<div class="logo">FantaMC</div>
 
-<img src="fantamcspawn.png" class="banner">
-
-<h1>⚔️ SURVIVAL GRANDS ⚔️</h1>
-
-<p>Donde la estrategia y la fuerza definen tu legado.</p>
-
-<div class="buttons">
-
-<a href="https://discord.gg/G7j5jhPv" target="_blank" class="discord">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
-Discord
-</a>
-
+<div class="login">
+<a href="#">Log in</a>
+<a href="#">Register</a>
 </div>
-
-<div class="server-ip">
-IP: <b>play.fantamc.net</b>
-</div>
-
-<div id="players" class="players">
-Jugadores Online: Cargando...
-</div>
-
 </header>
 
 
-<section class="info">
+<section class="banner">
 
-<h2>🌟 ¿QUÉ TE ESPERA?</h2>
+<img src="fantamcspawn.png" class="banner-img">
 
-<ul>
-<li>🛡️ Guerra de Clanes Extrema</li>
-<li>🚩 KOTHs Desafiantes</li>
-<li>⚖️ Transparencia y Justicia</li>
-<li>💰 Economía Equilibrada</li>
-</ul>
+<div class="play-box">
+
+<h2>ÚNETE AHORA</h2>
+
+<a class="play-button">PLAY NOW</a>
+
+<p class="ip">SERVER IP » play.fantamc.net</p>
+
+<p id="players">Jugadores online: cargando...</p>
+
+</div>
+
+</section>
+
+
+<nav class="menu">
+
+<a href="#">Home</a>
+<a href="#">Modalidades</a>
+<a href="#">Ranking</a>
+<a href="#">Reglas</a>
+<a href="#">Soporte</a>
+<a href="https://discord.gg/G7j5jhPv">Discord</a>
+
+</nav>
+
+
+<section class="content">
+
+<h1>⚔️ BIENVENIDOS A SURVIVAL GRANDS ⚔️</h1>
+
+<p>
+Donde la estrategia y la fuerza definen tu legado.
+</p>
+
+<p>
+¡Prepárate para la experiencia definitiva de Survival competitivo!
+</p>
 
 </section>
 
 
 <section class="staff">
 
-<h2>🛡️ EQUIPO SURVIVAL GRANDS</h2>
+<h2>🛡️ EQUIPO DEL SERVIDOR</h2>
 
 <div class="staff-grid">
 
-<div class="card owner">
+<div class="staff-card">
 <img src="https://mc-heads.net/body/a829cc48139d419aaf82d62482c9b55b">
 <h3>triqqew</h3>
 <p>OWNER</p>
 </div>
 
-<div class="card admin">
+<div class="staff-card">
 <img src="https://mc-heads.net/body/a44da48ed12a43be811414e8642b27d0">
 <h3>dunv</h3>
 <p>ADMIN</p>
 </div>
 
-<div class="card gestion">
+<div class="staff-card">
 <img src="https://mc-heads.net/body/f414bf4865ad4b4eb25b5eb44b31cea4">
 <h3>Scartleth</h3>
 <p>GESTIÓN</p>
 </div>
 
-<div class="card mod">
-<img src="https://mc-heads.net/body/vDamage">
-<h3>vDamage</h3>
-<p>MOD</p>
 </div>
-
-<div class="card support">
-<img src="https://mc-heads.net/body/Jhoaraly">
-<h3>Jhoaraly</h3>
-<p>SUPPORT</p>
-</div>
-
-<div class="card support">
-<img src="https://mc-heads.net/body/AscanIsBack">
-<h3>AscanIsBack</h3>
-<p>SUPPORT</p>
-</div>
-
-<div class="card support">
-<img src="https://mc-heads.net/body/x4sp_">
-<h3>x4sp_</h3>
-<p>SUPPORT</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="rules">
-
-<h2>📜 REGLAMENTO</h2>
-
-<p>Consulta todas las reglas del servidor en el apartado de reglamento.</p>
-
-<a href="reglas.html" class="rules-btn">Ver Reglas</a>
 
 </section>
 
@@ -122,13 +101,12 @@ fetch("https://api.mcsrvstat.us/2/play.fantamc.net")
 
 if(data.players){
 document.getElementById("players").innerHTML =
-"👥 Jugadores Online: " + data.players.online + "/" + data.players.max;
+"Jugadores online: " + data.players.online;
 }
 
-});
+})
 
 </script>
-
 
 </body>
 </html>
