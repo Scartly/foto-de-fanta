@@ -7,213 +7,209 @@
 <style>
 
 body{
-margin:0;
+background:#0b0b0b;
 font-family:Arial;
-background:#0f0f0f;
 color:white;
+margin:0;
 text-align:center;
 }
 
-/* MENU */
-
-nav{
-background:black;
-padding:15px;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
+header{
+padding:40px;
+font-size:35px;
+color:#ffa500;
 font-weight:bold;
 }
 
-nav a:hover{
-color:orange;
-}
-
-/* SPAWN */
-
 .spawn{
-background:url("fantamcspawn.png");
-background-size:cover;
-background-position:center;
-padding:200px 20px;
-}
-
-.spawn-box{
-background:rgba(0,0,0,0.8);
-padding:40px;
-border-radius:10px;
-display:inline-block;
-max-width:800px;
-}
-
-.spawn h1{
-color:orange;
-}
-
-/* DISCORD */
-
-.discord{
-background:#5865F2;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-color:white;
-display:inline-flex;
-align-items:center;
+width:80%;
+max-width:900px;
+border-radius:15px;
+box-shadow:0 0 20px orange;
 margin-top:20px;
 }
 
-.discord img{
-width:20px;
-margin-right:10px;
+.section{
+max-width:1200px;
+margin:auto;
+padding:30px;
 }
 
-/* STAFF */
-
-.staff{
-padding:70px 20px;
-}
-
-.staff-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+.staff-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:25px;
+margin-top:40px;
 }
 
-.card{
-background:#1c1c1c;
+.staff-card{
+background:#1a1a1a;
 padding:25px;
-border-radius:12px;
-width:200px;
+border-radius:15px;
 transition:0.3s;
+box-shadow:0 0 10px black;
 }
 
-.card:hover{
-transform:scale(1.05);
+.staff-card:hover{
+transform:scale(1.07);
+box-shadow:0 0 25px #00ff9d;
 }
 
-.card img{
-width:90px;
+.staff-card img{
+width:120px;
+image-rendering:pixelated;
+margin-bottom:10px;
+}
+
+.owner{border:2px solid gold;}
+.admin{border:2px solid orange;}
+.gestion{border:2px solid #00bfff;}
+.mod{border:2px solid #ffaa00;}
+.support{border:2px solid #00ff55;}
+
+.discord-btn{
+display:inline-block;
+margin-top:40px;
+padding:15px 25px;
+background:#5865F2;
+border-radius:10px;
+color:white;
+font-weight:bold;
+text-decoration:none;
+font-size:18px;
+}
+
+.discord-btn:hover{
+background:#4752c4;
+}
+
+.notice{
+margin-top:40px;
+background:#222;
+padding:15px;
+border-left:5px solid red;
 border-radius:8px;
 }
 
-.owner{
-border:2px solid gold;
-}
-
-.admin{
-border:2px solid red;
-}
-
-.gestion{
-border:2px solid deepskyblue;
-}
-
-.mod{
-border:2px solid orange;
-}
-
-.support{
-border:2px solid limegreen;
+.server-status{
+margin-top:20px;
+font-size:20px;
+color:#00ff9d;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Reglas</a>
-<a href="#">Anuncios</a>
-<a href="#">Reportes</a>
-<a href="#">Apelaciones</a>
-</nav>
+<header>
+⚔️ BIENVENIDOS A SURVIVAL GRANDS ⚔️
+</header>
 
-<div class="spawn">
+<img src="fantamcspawn.png" class="spawn">
 
-<div class="spawn-box">
-
-<h1>⚔️ BIENVENIDOS A FANTAMC STUDIOS ⚔️</h1>
-
-<p>Donde la estrategia y la fuerza definen tu legado.</p>
+<div class="section">
 
 <p>
-¡Prepárate para la experiencia definitiva de Survival competitivo!
-Los clanes luchan por el control del territorio y el dominio del Top.
+Donde la estrategia y la fuerza definen tu legado.<br><br>
+
+¡Prepárate para la experiencia definitiva de Survival competitivo!  
+Survival Grands no es solo un servidor; es un campo de batalla donde los clanes más poderosos luchan por la gloria.
 </p>
 
-<a class="discord" href="https://discord.gg/G7j5jhPv" target="_blank">
+<h2>🌟 ¿QUÉ TE ESPERA?</h2>
 
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+<p>
+🛡️ Guerra de Clanes Extrema<br>
+🚩 KOTHs Desafiantes<br>
+⚖️ Transparencia y Justicia<br>
+💰 Economía Equilibrada
+</p>
 
-Unirse al Discord
-
-</a>
-
+<div class="server-status">
+👥 Jugadores Online: <span id="players">Cargando...</span>
 </div>
 
 </div>
 
-<section class="staff">
+<div class="section">
 
-<h2>🛡️ EQUIPO DE STAFF 🛡️</h2>
+<h2>🛡️ EQUIPO SURVIVAL GRANDS 🛡️</h2>
 
-<div class="staff-container">
+<div class="staff-grid">
 
-<div class="card owner">
-<img src="https://mc-heads.net/avatar/triqqew/100">
-<h3>triqqew</h3>
+<div class="staff-card owner">
+<img src="https://mc-heads.net/body/a829cc48139d419aaf82d62482c9b55b/150">
+<h3>👑 triqqew</h3>
 <p>OWNER</p>
 </div>
 
-<div class="card admin">
-<img src="https://mc-heads.net/avatar/dunv/100">
+<div class="staff-card admin">
+<img src="https://mc-heads.net/body/a44da48ed12a43be811414e8642b27d0/150">
 <h3>dunv</h3>
 <p>ADMIN</p>
 </div>
 
-<div class="card gestion">
-<img src="https://mc-heads.net/avatar/Scartleth/100">
+<div class="staff-card gestion">
+<img src="https://mc-heads.net/body/f414bf4865ad4b4eb25b5eb44b31cea4/150">
 <h3>Scartleth</h3>
 <p>GESTIÓN</p>
 </div>
 
-<div class="card mod">
-<img src="https://mc-heads.net/avatar/vDamage/100">
+<div class="staff-card mod">
+<img src="https://mc-heads.net/body/vDamage/150">
 <h3>vDamage</h3>
 <p>MOD</p>
 </div>
 
-<div class="card support">
-<img src="https://mc-heads.net/avatar/Jhoaraly/100">
+<div class="staff-card support">
+<img src="https://mc-heads.net/body/Jhoaraly/150">
 <h3>Jhoaraly</h3>
 <p>SUPPORT</p>
 </div>
 
-<div class="card support">
-<img src="https://mc-heads.net/avatar/AscanIsBack/100">
+<div class="staff-card support">
+<img src="https://mc-heads.net/body/AscanIsBack/150">
 <h3>AscanIsBack</h3>
 <p>SUPPORT</p>
 </div>
 
-<div class="card support">
-<img src="https://mc-heads.net/avatar/x4sp_/100">
+<div class="staff-card support">
+<img src="https://mc-heads.net/body/x4sp_/150">
 <h3>x4sp_</h3>
 <p>SUPPORT</p>
 </div>
 
 </div>
 
-<p style="margin-top:40px;">
-⚠️ RECUERDA: Reportes y apelaciones únicamente vía Ticket.
-</p>
+<a class="discord-btn" href="https://discord.gg/G7j5jhPv">
+💬 Unirse al Discord
+</a>
 
-</section>
+<div class="notice">
+⚠️ RECUERDA: Reportes y apelaciones únicamente vía Ticket.  
+El Staff nunca pedirá tus datos personales.
+</div>
+
+</div>
+
+<script>
+
+fetch https://api.mcsrvstat.us/2/play.survivalgrands.net
+.then(res => res.json())
+.then(data => {
+
+if(data.online){
+document.getElementById("players").innerText =
+data.players.online + " / " + data.players.max;
+}else{
+document.getElementById("players").innerText = "Servidor Offline";
+}
+
+})
+
+</script>
 
 </body>
 </html>
