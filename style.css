@@ -1,18 +1,112 @@
-nav {
-    background: #000;
-    padding: 15px;
-    text-align: center;
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    transition: 0.3s;
+/* barra superior */
+
+.topbar{
+display:flex;
+justify-content:space-between;
+padding:10px 40px;
+background:#111;
+border-bottom:2px solid gold;
 }
 
-nav a:hover {
-    color: orange;
+.logo{
+font-size:26px;
+font-weight:bold;
+color:gold;
 }
 
+.login a{
+margin-left:15px;
+color:gold;
+text-decoration:none;
+}
+
+/* banner */
+
+.banner{
+position:relative;
+text-align:center;
+}
+
+.banner-img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.play-box{
+position:absolute;
+right:80px;
+top:80px;
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:10px;
+}
+
+.play-button{
+display:inline-block;
+background:gold;
+color:black;
+padding:12px 25px;
+font-weight:bold;
+border-radius:8px;
+cursor:pointer;
+}
+
+.ip{
+margin-top:10px;
+color:orange;
+}
+
+/* menu */
+
+.menu{
+display:flex;
+justify-content:center;
+background:linear-gradient(#f6d365,#fda085);
+padding:10px;
+}
+
+.menu a{
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+color:black;
+}
+
+/* contenido */
+
+.content{
+padding:40px;
+text-align:center;
+}
+
+/* staff */
+
+.staff{
+padding:40px;
+}
+
+.staff-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.staff-card{
+background:#181818;
+padding:20px;
+border-radius:10px;
+width:180px;
+text-align:center;
+}
+
+.staff-card img{
+height:150px;
+}
