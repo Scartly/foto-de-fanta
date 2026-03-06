@@ -2,235 +2,216 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Survival Grands</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f0f0f;
-    color: white;
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+text-align:center;
 }
 
 /* MENU */
-nav {
-    background: #000;
-    padding: 15px;
-    text-align: center;
+
+nav{
+background:black;
+padding:15px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
 }
 
-nav a:hover {
-    color: orange;
+nav a:hover{
+color:orange;
 }
 
-/* BANNER */
-.spawn-section {
-    background: url('fantamcspawn.png') center/cover no-repeat;
-    padding: 200px 20px;
-    text-align: center;
+/* SPAWN */
+
+.spawn{
+background:url("fantamcspawn.png");
+background-size:cover;
+background-position:center;
+padding:200px 20px;
 }
 
-.spawn-box {
-    background: rgba(0,0,0,0.85);
-    display: inline-block;
-    padding: 50px;
-    border-radius: 15px;
-    max-width: 900px;
+.spawn-box{
+background:rgba(0,0,0,0.8);
+padding:40px;
+border-radius:10px;
+display:inline-block;
+max-width:800px;
 }
 
-.spawn-box h1 {
-    font-size: 45px;
-    color: orange;
-    text-shadow: 0 0 15px orange;
+.spawn h1{
+color:orange;
 }
 
-/* BOTON DISCORD */
-.discord-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #5865F2;
-    padding: 15px 30px;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 25px;
-    transition: 0.3s;
+/* DISCORD */
+
+.discord{
+background:#5865F2;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+display:inline-flex;
+align-items:center;
+margin-top:20px;
 }
 
-.discord-btn img {
-    width: 22px;
-    margin-right: 10px;
-}
-
-.discord-btn:hover {
-    background: #404EED;
-    transform: scale(1.05);
+.discord img{
+width:20px;
+margin-right:10px;
 }
 
 /* STAFF */
-section {
-    padding: 80px 20px;
-    text-align: center;
+
+.staff{
+padding:70px 20px;
 }
 
-.staff-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+.staff-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
 }
 
-.staff-card {
-    background: #1c1c1c;
-    padding: 30px;
-    border-radius: 15px;
-    width: 220px;
-    transition: 0.3s;
-    border: 2px solid transparent;
+.card{
+background:#1c1c1c;
+padding:25px;
+border-radius:12px;
+width:200px;
+transition:0.3s;
 }
 
-.staff-card:hover {
-    transform: translateY(-10px) scale(1.05);
+.card:hover{
+transform:scale(1.05);
 }
 
-/* Rangos */
-.owner <img src="https://crafatar.com/avatars/a829cc48139d419aaf82d62482c9b55b?size=100&overlay">
- {
-    border: 2px solid gold;
-    box-shadow: 0 0 20px gold;
+.card img{
+width:90px;
+border-radius:8px;
 }
 
-.admin <img src="https://crafatar.com/avatars/a44da48ed12a43be811414e8642b27d0?size=100&overlay">
- {
-    border: 2px solid red;
-    box-shadow: 0 0 15px red;
+.owner{
+border:2px solid gold;
 }
 
-.gestion <img src="https://crafatar.com/avatars/f414bf4865ad4b4eb25b5eb44b31cea4?size=100&overlay">
-
-{
-    border: 2px solid deepskyblue;
-    box-shadow: 0 0 15px deepskyblue;
+.admin{
+border:2px solid red;
 }
 
-.mod {
-    border: 2px solid orange;
-    box-shadow: 0 0 15px orange;
+.gestion{
+border:2px solid deepskyblue;
 }
 
-.support {
-    border: 2px solid limegreen;
-    box-shadow: 0 0 15px limegreen;
+.mod{
+border:2px solid orange;
 }
 
-.staff-card img {
-    width: 100px;
-    border-radius: 10px;
+.support{
+border:2px solid limegreen;
 }
 
-.staff-card h3 {
-    margin: 15px 0 5px;
-}
-
-.recordatorio {
-    margin-top: 60px;
-    padding: 20px;
-    background: #2c2c2c;
-    border-left: 5px solid red;
-    border-radius: 10px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
 </style>
 </head>
 
 <body>
 
 <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Reglas</a>
-    <a href="#">Anuncios</a>
-    <a href="#">Reportes</a>
-    <a href="#">Apelaciones</a>
+<a href="#">Inicio</a>
+<a href="#">Reglas</a>
+<a href="#">Anuncios</a>
+<a href="#">Reportes</a>
+<a href="#">Apelaciones</a>
 </nav>
 
-<div class="spawn-section">
-    <div class="spawn-box">
-        <h1>⚔️ BIENVENIDOS A SURVIVAL GRANDS ⚔️</h1>
-        <p>Donde la estrategia y la fuerza definen tu legado.</p>
+<div class="spawn">
 
-        <a href="https://discord.gg/G7j5jhPv" target="_blank" class="discord-btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
-            ¡Únete a nuestro Discord!
-        </a>
-    </div>
+<div class="spawn-box">
+
+<h1>⚔️ BIENVENIDOS A FANTAMC STUDIOS ⚔️</h1>
+
+<p>Donde la estrategia y la fuerza definen tu legado.</p>
+
+<p>
+¡Prepárate para la experiencia definitiva de Survival competitivo!
+Los clanes luchan por el control del territorio y el dominio del Top.
+</p>
+
+<a class="discord" href="https://discord.gg/G7j5jhPv" target="_blank">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+
+Unirse al Discord
+
+</a>
+
 </div>
 
-<section>
+</div>
 
-<h2 style="color:orange;">🛡️ EQUIPO SURVIVAL GRANDS 🛡️</h2>
+<section class="staff">
+
+<h2>🛡️ EQUIPO DE STAFF 🛡️</h2>
 
 <div class="staff-container">
 
-    <div class="staff-card owner">
-        <img src="https://crafatar.com/avatars/triqqew?size=100&overlay">
-        <h3>👑 triqqew</h3>
-        <p>OWNER</p>
-    </div>
+<div class="card owner">
+<img src="https://mc-heads.net/avatar/triqqew/100">
+<h3>triqqew</h3>
+<p>OWNER</p>
+</div>
 
-    <div class="staff-card admin">
-        <img src="https://crafatar.com/avatars/dunv?size=100&overlay">
-        <h3>dunv</h3>
-        <p>ADMIN</p>
-    </div>
+<div class="card admin">
+<img src="https://mc-heads.net/avatar/dunv/100">
+<h3>dunv</h3>
+<p>ADMIN</p>
+</div>
 
-    <div class="staff-card gestion">
-        <img src="https://crafatar.com/avatars/Scartleth?size=100&overlay">
-        <h3>Scartleth</h3>
-        <p>GESTIÓN</p>
-    </div>
+<div class="card gestion">
+<img src="https://mc-heads.net/avatar/Scartleth/100">
+<h3>Scartleth</h3>
+<p>GESTIÓN</p>
+</div>
 
-    <div class="staff-card mod">
-        <img src="https://crafatar.com/avatars/vDamage?size=100&overlay">
-        <h3>vDamage</h3>
-        <p>MOD</p>
-    </div>
+<div class="card mod">
+<img src="https://mc-heads.net/avatar/vDamage/100">
+<h3>vDamage</h3>
+<p>MOD</p>
+</div>
 
-    <div class="staff-card support">
-        <img src="https://crafatar.com/avatars/Jhoaraly?size=100&overlay">
-        <h3>Jhoaraly</h3>
-        <p>SUPPORT</p>
-    </div>
+<div class="card support">
+<img src="https://mc-heads.net/avatar/Jhoaraly/100">
+<h3>Jhoaraly</h3>
+<p>SUPPORT</p>
+</div>
 
-    <div class="staff-card support">
-        <img src="https://crafatar.com/avatars/AscanIsBack?size=100&overlay">
-        <h3>AscanIsBack</h3>
-        <p>SUPPORT</p>
-    </div>
+<div class="card support">
+<img src="https://mc-heads.net/avatar/AscanIsBack/100">
+<h3>AscanIsBack</h3>
+<p>SUPPORT</p>
+</div>
 
-    <div class="staff-card support">
-        <img src="https://crafatar.com/avatars/x4sp_?size=100&overlay">
-        <h3>x4sp_</h3>
-        <p>SUPPORT</p>
-    </div>
+<div class="card support">
+<img src="https://mc-heads.net/avatar/x4sp_/100">
+<h3>x4sp_</h3>
+<p>SUPPORT</p>
+</div>
 
 </div>
 
-<div class="recordatorio">
-⚠️ <strong>RECUERDA:</strong> Reportes y apelaciones únicamente vía Ticket.  
-El Staff nunca pedirá tus datos personales.
-</div>
+<p style="margin-top:40px;">
+⚠️ RECUERDA: Reportes y apelaciones únicamente vía Ticket.
+</p>
 
 </section>
 
